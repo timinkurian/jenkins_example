@@ -17,7 +17,9 @@ pipeline {
 
         stage('step') {
           steps {
+            withmaven{
             sh 'maven -version'
+            }
           }
         }
 
